@@ -66,10 +66,9 @@ while running:
             enemy.move()
             enemy.draw()
 
-            # Collision detection between player and enemy
             if player_x < enemy.x + enemy.width and player_x + player_width > enemy.x \
                     and player_y < enemy.y + enemy.height and player_y + player_height > enemy.y:
-                    enemy.x -= 2 * enemy.speed
+                    enemy.x -= enemy.speed
 
 
 
